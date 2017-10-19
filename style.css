@@ -13,6 +13,7 @@ body {
 }
 p{
 		line-height:1.65em;
+		font-size: 14px;
 }
 a:link,
 a:visited {
@@ -35,9 +36,43 @@ div.container {
 		border-bottom:2px solid #999;
 		margin-top:30px;
 }
+.site-footer{
+		border-top: 2px solid #999;
+		margin-top: 30px;
+}
+.a_post_wrapper{
+		border-bottom: 2px dotted #bbb;
+}
+.a_post_wrapper: last-of-type{
+		border-bottom: none;
+}
+.a_post_wrapper p{
+	font-size:12px;
+}
 article.post{
 		border-bottom:2px dotted #bbb;
 }
 article.post: last-of-type{
 		border-bottom:none;
+}
+.a_sub_title{
+	font-size: 10px;
+}
+
+
+/*Navigation Menu*/
+
+.a_site_header ul{
+	margin: 0;
+	padding: 0;
+}
+.a_site_header ul li{
+	list-style: none;
+	float: left;
+}
+
+
+.a_site_header ul:before, {
+
+
 }
