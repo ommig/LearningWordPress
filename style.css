@@ -9,7 +9,7 @@ body {
 		font-famil: arial, sans-serif;
 		font-size:14px;
 		color:#333;
-		background-color:#pink;
+		
 }
 p{
 		line-height:1.65em;
@@ -36,24 +36,22 @@ div.container {
 		border-bottom:2px solid #999;
 		margin-top:30px;
 }
+
+/*Use The Bottom Line of Footer*/
 .site-footer{
 		border-top: 2px solid #999;
 		margin-top: 30px;
 }
+/*Use The Bottom Line of Footer*/
+
 .a_post_wrapper{
 		border-bottom: 2px dotted #bbb;
 }
-.a_post_wrapper: last-of-type{
+.a_post_wrapper:last-of-type{
 		border-bottom: none;
 }
 .a_post_wrapper p{
-	font-size:12px;
-}
-article.post{
-		border-bottom:2px dotted #bbb;
-}
-article.post: last-of-type{
-		border-bottom:none;
+	font-size:14px;
 }
 .a_sub_title{
 	font-size: 10px;
@@ -65,14 +63,86 @@ article.post: last-of-type{
 .a_site_header ul{
 	margin: 0;
 	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 2px;
 }
+.a_site_header ul:before, .a_site_header ul:after{content: ""; display: table;}
+.a_site_header ul:after {clear: both;}
+.a_site_header ul{*zoom: 1;}
+
 .a_site_header ul li{
 	list-style: none;
 	float: left;
 }
+ 
+/*Site Header Menu*/
+.site-header ul li {
+	margin-right: 10px;
+}
+
+.site-header ul li a:link,
+.site-header ul li a:visited {
+	display: block;
+	padding: 10px, 18px;
+	border-bottom: none;
+	border: 1px solid #bbb;
+	text-decoration: none;
+} 
+.site-header ul li a:hover {
+	background-color: #ececec;
+}
 
 
-.a_site_header ul:before, {
+.site-header nav ul li.current-menu-item  a:link,
+.site-header nav ul li.current-menu-item  a:visited{
+	background-color: #006ec3;
+	color: #fff;}
 
+/*Footer Menu*/
+
+/*To Keep The Footer Menu Aligned In Left and Organised*/
+.a_site_footer ul{
+	margin: 0;
+	padding: 0;
+}
+/*To Keep The Footer Menu Aligned In Left and Organised*/
+
+.a_site_footer ul:before, .a_site_footer ul:after{content: ""; display: table;}
+.a_site_footer ul:after {clear: both;}
+.a_site_footer ul{*zoom: 1;}
+
+/*To End The Unorder List*/
+
+.a_site_footer ul li{
+	list-style: none;
+	float: left;
+}
+
+/*To End The Unorder List*/
+
+
+/*Space Given Between Given Link*/
+
+.site-footer ul li {
+	border-right: 1px dotted #bbb;
+	padding: 10px;
+	margin-right: 3px;
+}
+
+/*Space Given Between Given Link*/
+
+
+.site-footer ul li a:link,
+.site-footer ul li a:visited {
+	text-decoration: none;
+} 
+
+
+/*Page Layouts*/
+
+.a_page h2 {
+	font-size: 40px;
 
 }
+
+
